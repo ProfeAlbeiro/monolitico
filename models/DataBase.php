@@ -17,9 +17,8 @@
             $hostname = "server-mono1.mysql.database.azure.com";
             $port = "3306";
             $database = "database_php";
-            $username = "admin_mono1";
-            $password = "ConnMono.";
-            // $password = getenv('DB_PASSWORD');
+            $username = "admin_mono1";            
+            $password = getenv('DB_PASSWORD');
             $options = array(
                 PDO::MYSQL_ATTR_SSL_CA => 'assets/database/DigiCertGlobalRootG2.crt.pem'
             );
